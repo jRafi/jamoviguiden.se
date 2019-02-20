@@ -1,0 +1,23 @@
+# Ladda in data
+
+Innan du börjar analysera behöver dina data laddas in i jamovi. Du kan ladda in data dels från andra statistikprogram (SPSS, Stata, SAS, JASP) samt från textfiler (.txt, .csv) med kommaavgränsade data.
+
+För att ladda in data klickar du på menyikonen längst uppe till vänster och väljer sedan `Open`. Se till att `This PC`är valt och klicka på `Browse`.
+
+
+## Kommaavgränsade data {#csvData}
+
+En kommaavgränsad fil har ändelsen .csv och innehåller data som oformaterad text, där celler är separerade av semikolon eller annat specialtecken (se bild nedan). En fördel med csv-filer jämfört med excel-filer är att de enkelt kan läsas in av många andra program. jamovi kan inte öppna excelfiler, men öppnar du en csv-fil i jamovi förstår programmet precis hur data ska läsas in. Har du dina data i excel väljer du `Arkiv -> Spara som...`och väljer `Kommaavgränsad` i rullisten nära `Spara som`-knappen.  
+
+<img src="images/csv_data.PNG" alt="Kommaavgränsade data" width="60%"/>  
+
+
+## Breda data {#bredaData}
+
+Innan du kan analysera dina data i jamovi behöver de vara i brett format. Breda data (se figur A nedan) innebär att varje deltagare enbart har en rad, till skillnad från långa data (se figur B nedan) där varje deltagare kan ha fler rader.
+
+<img src="/images/wide_data.JPG" alt="Breda data" width="60%"/>  
+Figur A: _Data i brett format._  
+
+<img src="images/long_data.JPG" alt="Långa data" width="45%"/>  
+Figur B: _Data i långt format._  

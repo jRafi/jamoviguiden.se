@@ -1,0 +1,20 @@
+# Deskriptiva analyser
+
+Detta kapitel går igenom hur du skapar deskriptiva analyser och grafer
+
+1. Välj `Analyses -> Exploration -> Descriptives`.  
+<img src="images/select/select_descriptives.JPG" width="60%"/> 
+
+2. Flytta de variabler du vill ha deskriptiva anlayser om till __Varibles__.  
+<img src="images/add_var/add_var_descriptives.JPG" width="70%"/> 
+
+3. Resultatet visas direkt i panelen till höger. Högerklicka på tabellen för att spara resultatet.
+<img src="images/output/output_descriptives1.JPG" width="40%"/>
+
+4. Vill du hellre ha deskriptiva analyser uppdelat på en kategorisk variabel så flyttar du den till __Split by__.
+
+5. Klicka på fliken __Statistics__ för att se fler alternativ
+<img src="images/select/select_descriptives_statistics.JPG" width="60%"/> 
+
+6. Klicka på fliken __Plots__ för att kunna skaper grafer baserat på dina val i punkt 2.
+<img src="images/select/select_descriptives_plots.JPG" width="60%"/> 

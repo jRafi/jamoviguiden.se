@@ -2,6 +2,8 @@
 title: "Kom igång med jamovi"
 author: "Jonas Rafi"
 site: bookdown::bookdown_site
+github-repo: jRafi/KIMJ
+url: 'https\://jrafi.se/jamovi'
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
@@ -10,23 +12,26 @@ lot: yes
 lof: yes
 fontsize: 12pt
 monofontoptions: "Scale=0.7"
-description: "En kort snabbsstartsguide för att komma igång med jamovi."
+description: "Snabbsstartsguide till jamovi."
 ---
 
 # Översikt {-}
 
-Denna korta guide är tänkt att fungera som en snabb och översiktlig introduktion till jamovi. Guiden visar hur du:  
+Denna snabbstartsguide ger en översiktlig introduktion till jamovi. Guiden visar hur du:  
 
 * Laddar in data i jamovi
 * Överblickar data med deskriptiva analyser och grafer
 * Kommer igång med vanliga statistiska analyser
 
-Tilltänkta läsare är 1: de som redan använder ett annat statistikprogram men som vill komma igång med jamovi istället, 2: studenter som behöver analysera data och får statistisk handledning någonannastans ifrån. 
+Tilltänkta läsare är:  
 
-Observera att guiden bara visar hur du gör vanliga analyser med jamovi, inget om förutsättningar för olika statistiska test eller tolkningar av analyserna. Det finns gott om annan litteratur som behandlar sådana ämnen. Ett exempel är boken *learning statistics with jamovi* (2018) av Navarro och Foxcroft som utförligt går igenom både statistik och jamovis funktioner.
+1: Du som redan använder ett annat statistikprogram men som vill komma igång med jamovi  
+2: Studenter som behöver analysera data och får statistisk handledning någonannastans ifrån 
+
+Observera att guiden bara visar hur du gör vanliga analyser med jamovi, inget om förutsättningar eller tolkningar av statistiska test. Det finns gott om annan litteratur som behandlar sådana ämnen. Ett exempel är boken *learning statistics with jamovi* (2018) av Navarro och Foxcroft som utförligt går igenom både statistik och jamovis funktioner.
 
 Ladda ner jamovi på [www.jamovi.org](https://www.jamovi.org)
 
-Synpunkter och förbättringar av boken tas gärna emot till jonas.rafi [at] psychology.su eller på [github](https://www.github.com/jRafi/jamovi_snabbstart)  
+Frågor, synpunkter och förbättringar av guiden tas gärna emot till jonas.rafi [at] psychology.su eller på [github](https://github.com/jRafi/KIMJ)  
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons-licens" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">

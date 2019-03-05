@@ -1,3 +1,3 @@
 # Nästa steg
 
-När du utfört en analys i jamovi kommer du förmodligen kunna se hur du får fram effektstorlekar etc. Behöver du fördjupa dig i någon del rekommenderar jag *learning statistics with jamovi* (2018) av Navarro och Foxcroft, som finns gratis för nedladdning.
+Behöver du fördjupa dig i någon del rekommenderar jag **learning statistics with jamovi** (2018) av Navarro och Foxcroft, som finns gratis för nedladdning.

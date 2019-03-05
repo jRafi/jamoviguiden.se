@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Del 5 Regression | Kom igång med jamovi</title>
+  <title>Del 1 Ladda in data i jamovi | Kom igång med jamovi</title>
   <meta name="description" content="Snabbsstartsguide till jamovi.">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Del 5 Regression | Kom igång med jamovi" />
+  <meta property="og:title" content="Del 1 Ladda in data i jamovi | Kom igång med jamovi" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://jrafi.se/jamovi" />
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="jRafi/KIMJ" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Del 5 Regression | Kom igång med jamovi" />
+  <meta name="twitter:title" content="Del 1 Ladda in data i jamovi | Kom igång med jamovi" />
   
   <meta name="twitter:description" content="Snabbsstartsguide till jamovi." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="anova.html">
-<link rel="next" href="nasta-steg.html">
+<link rel="prev" href="index.html">
+<link rel="next" href="deskriptiva-analyser.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -63,7 +63,7 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Kom igång med jamovi</a></li>
+<li><a href="./">jamoviguiden.se</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Översikt</a></li>
@@ -109,33 +109,29 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="regression" class="section level1">
-<h1><span class="header-section-number">Del 5</span> Regression</h1>
-<div id="regression-1" class="section level2">
-<h2><span class="header-section-number">5.1</span> Regression</h2>
+<div id="ladda-in-data-i-jamovi" class="section level1">
+<h1><span class="header-section-number">Del 1</span> Ladda in data i jamovi</h1>
+<p>Du kan ladda in data i jamovi antingen från andra statistikprogram (SPSS, Stata, SAS, JASP) eller från en textfil (.txt eller .csv) med <strong>kommaavgränsade data</strong> (<a href="ladda-in-data-i-jamovi.html#csvData">1.2</a>). För att kunna utföra de vanligaste analyserna (t-test, ANOVA och regression) behöver dina data vara i <strong>brett format</strong> (<a href="ladda-in-data-i-jamovi.html#bredaData">1.3</a>).</p>
+<div id="oppna-en-fil" class="section level2">
+<h2><span class="header-section-number">1.1</span> Öppna en fil</h2>
 <ol style="list-style-type: decimal">
-<li><p>För att göra en linjär regressionsanalys behöver du två kontinuerliga variabler: en utfallsvariabel och en prediktor. Din data bör därför se ut ungefär såhär:<br />
-<img src="images/data_format/data_format_regression.JPG" width="25%"/></p></li>
-<li><p>Välj <code>Analyses -&gt; Regression -&gt; Linear Regression</code>.<br />
-<img src="images/select/select_regression_linear.JPG" width="40%"/></p></li>
-<li><p>Flytta din utfallsvariabel till rutan <strong>Dependent Variable</strong> och din prediktor till <strong>Covariates</strong>. Notera att båda måste vara kodade som kontinuerliga.<br />
-<img src="images/add_var/add_var_regression.JPG" width="70%"/></p></li>
-<li><p>Resultatet visas direkt:<br />
-<img src="images/output/output_regression.JPG" width="50%"/></p></li>
+<li><p>Klicka på menyikonen <img src="images/jamovi_menu_icon.JPG" alt="Kommaavgränsade data" width="3%"/> längst upp till vänster</p></li>
+<li><p>Kontrollera att <code>This PC/Mac</code> är valt och klicka på <code>Browse</code></p></li>
+<li><p>Välj den datafil du vill öppna. Läs mer om vilka filtyper som stöds här nedanför</p></li>
 </ol>
 </div>
-<div id="logistic-regression" class="section level2">
-<h2><span class="header-section-number">5.2</span> Logistic Regression</h2>
-<ol style="list-style-type: decimal">
-<li><p>För att göra en logistisk regressions behöver du en kontinuerlig prediktor och en kategorisk utfallsvariabel. Din data bör därför se ut ungefär såhär:<br />
-<img src="images/data_format/data_format_regression_logistic.JPG" width="25%"/></p></li>
-<li><p>Om din utfallsvariabel endast har två nivåer (som på bilden ovan): välj <code>Analyses -&gt; Regression -&gt; 2 Outcomes</code>. Om utfallsvariabeln har tre eller fler nivåer, välj istället <code>N Outcomes</code>.<br />
-<img src="images/select/select_regression_logistic.JPG" width="40%"/></p></li>
-<li><p>Flytta din utfallsvariabel till rutan <strong>Dependent Variable</strong> och din prediktor till <strong>Covariates</strong>.<br />
-<img src="images/add_var/add_var_regression_logistic.JPG" width="70%"/></p></li>
-<li><p>Resultatet visas direkt:<br />
-<img src="images/output/output_regression_logistic.JPG" width="50%"/></p></li>
-</ol>
+<div id="csvData" class="section level2">
+<h2><span class="header-section-number">1.2</span> Kommaavgränsade data</h2>
+<p>En kommaavgränsad fil har ändelsen .csv och innehåller data som oformaterad text, där celler är separerade av semikolon (se bild nedan) eller annat specialtecken. Har du dina data i Excel kan du skapa en csv-fil genom att välja <code>Arkiv -&gt; Spara som...</code>och välja <code>Kommaavgränsad</code> i rullisten nära <code>Spara som</code>-knappen.</p>
+<p><img src="images/csv_data.png" alt="Kommaavgränsade data" width="60%"/></p>
+</div>
+<div id="bredaData" class="section level2">
+<h2><span class="header-section-number">1.3</span> Breda data</h2>
+<p>Vanligtvis behöver dina data vara i det så-kallade “breda formatet”. Breda data (se figur A nedan) innebär att varje deltagare enbart har en rad, till skillnad från långa data (se figur B nedan) där varje deltagare kan ha fler rader.</p>
+<p><img src="images/wide_data.JPG" alt="Breda data" width="60%"/><br />
+Figur A: <em>Data i brett format.</em></p>
+<p><img src="images/long_data.JPG" alt="Långa data" width="45%"/><br />
+Figur B: <em>Data i långt format.</em></p>
 
 </div>
 </div>
@@ -144,8 +140,8 @@
           </div>
         </div>
       </div>
-<a href="anova.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="nasta-steg.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="deskriptiva-analyser.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

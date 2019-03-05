@@ -32,6 +32,6 @@ Observera att guiden bara visar hur du gör vanliga analyser med jamovi, inget o
 
 Ladda ner jamovi på [www.jamovi.org](https://www.jamovi.org)
 
-Frågor, synpunkter och förbättringar av guiden tas gärna emot till jonas.rafi [at] psychology.su eller på [github](https://github.com/jRafi/KIMJ)  
+Frågor, synpunkter och förbättringar av guiden tas gärna emot till jonas.rafi [at] psychology.su eller på [github](https://github.com/jRafi/jamoviguiden)  
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons-licens" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">

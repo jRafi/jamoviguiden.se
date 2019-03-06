@@ -1,1 +1,1 @@
-Quickstart guide for jamovi (in Swedish). https://jrafi.se/jamovi
+Quickstart guide for jamovi (in Swedish). https://www.jamoviguiden.se

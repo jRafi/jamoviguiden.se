@@ -2,4 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-.dissat material/
+trashed
+packages.bib
+jamoviguiden.Rproj

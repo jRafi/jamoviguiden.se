@@ -1,1 +1,3 @@
-Quickstart guide for jamovi (in Swedish). https://www.jamoviguiden.se
+# jamoviguide.com
+
+A jamovi quickstart guide with step-by-step instructions: [jamoviguide.com](https://www.jamoviguide.com)

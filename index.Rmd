@@ -1,37 +1,32 @@
 --- 
-title: "Kom igång med jamovi"
+title: "jamoviguiden"
 author: "Jonas Rafi"
+date: "`r Sys.Date()`"
+knit: bookdown::render_book
 site: bookdown::bookdown_site
-github-repo: jRafi/KIMJ
-url: 'https\://jrafi.se/jamovi'
+github-repo: jRafi/jamoviguiden
+url: 'https\://jamoviguiden.se'
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
+cover-image: '/images/pixel.jpg'
 lot: yes
 lof: yes
 fontsize: 12pt
 monofontoptions: "Scale=0.7"
-description: "Snabbsstartsguide till jamovi."
+description: "Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer."
 ---
 
-# Översikt {-}
+# Om jamoviguiden {-}
 
-Denna snabbstartsguide ger en översiktlig introduktion till jamovi. Guiden visar hur du:  
+Jamoviguiden innehåller korta, lättillgängliga guider (med bilder!) över vanliga procedurer i jamovi.  
+För att hålla innehållet kort så beskrivs inget (eller lite) om antaganden bakom statistiska tester eller hur resultaten ska tolkas. När du väl kommit igång är det ofta enkelt att utforska vidare på egen hand. Vill du lära dig mer om statistik med jamovi så rekommenderar jag e-boken <a href="https://www.learnstatswithjamovi.com/">Learning statistics with jamovi</a> (gratis!) av Navarro och Foxcroft.   
 
-* Laddar in data i jamovi
-* Överblickar data med deskriptiva analyser och grafer
-* Kommer igång med vanliga statistiska analyser
+#### Kontakt {-}
 
-Tilltänkta läsare är:  
+jonas.rafi \<at \> psychology.su.se.
 
-1: Du som redan använder ett annat statistikprogram men som vill komma igång med jamovi  
-2: Studenter som behöver analysera data och får statistisk handledning någonannastans ifrån 
+#### Licens {-}
 
-Observera att guiden bara visar hur du gör vanliga analyser med jamovi, inget om förutsättningar eller tolkningar av statistiska test. Det finns gott om annan litteratur som behandlar sådana ämnen. Ett exempel är boken *learning statistics with jamovi* (2018) av Navarro och Foxcroft som utförligt går igenom både statistik och jamovis funktioner.
-
-Ladda ner jamovi på [www.jamovi.org](https://www.jamovi.org)
-
-Frågor, synpunkter och förbättringar av guiden tas gärna emot till jonas.rafi [at] psychology.su eller på [github](https://github.com/jRafi/jamoviguiden)  
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons-licens" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons-licens" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Detta verk är licensierat under en <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Erkännande-IckeKommersiell 4.0 Internationell Licens</a>.

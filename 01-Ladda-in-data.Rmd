@@ -1,27 +1,21 @@
-# Ladda in data i jamovi
+# (PART\*) Kom igång {-}
 
-Du kan ladda in data i jamovi antingen från andra statistikprogram (SPSS, Stata, SAS, JASP) eller från en textfil (.txt eller .csv) med __kommaavgränsade data__ (\@ref(csvData)). För att kunna utföra de vanligaste analyserna (t-test, ANOVA och regression) behöver dina data vara i __brett format__ (\@ref(bredaData)).
+# Ladda in data i jamovi {#ladda-in-data-i-jamovi}
 
-## Öppna en fil
+#### Öppna en fil i jamovi {-}
 
-1. Klicka på menyikonen <img src="images/jamovi_menu_icon.JPG" alt="Kommaavgränsade data" width="3%"/> längst upp till vänster
+För att öppna en fil i jamovi, klicka på menyikonen <img src="images/icons/menu.JPG" width="3%"/> och välj `Open file` -> `Browse`.
 
-2. Kontrollera att `This PC/Mac` är valt och klicka på `Browse`
+Ofta används "komma-avgränsade filer" (med filändelsen .csv eller .txt) till jamovi. Även filformat från följande statistikprogram kan läsas in: JASP (.jasp), R (.RData, .RDS), SAS (.xpt, .sas7bdat), SPSS (.sav, .zsav, .por) och Stata (.dta).
 
-3. Välj den datafil du vill öppna. Läs mer om vilka filtyper som stöds här nedanför
+Har du data i Excel men vet inte hur du ska ladda in filen i jamovi? Fortsätt då att läsa nedanstående stycke.  
 
-## Kommaavgränsade data {#csvData}
 
-En kommaavgränsad fil har ändelsen .csv och innehåller data som oformaterad text, där celler är separerade av semikolon (se bild nedan) eller annat specialtecken. Har du dina data i Excel kan du skapa en csv-fil genom att välja `Arkiv -> Spara som...`och välja `Kommaavgränsad` i rullisten nära `Spara som`-knappen.  
+#### Kommaavgränsade data #### {-}
 
-<img src="images/csv_data.PNG" alt="Kommaavgränsade data" width="60%"/>  
+En fil med kommaavgränsade värden (csv) använder kommatecken för att separera värden. Filen består av oformaterad data där varje rad är en observation. Den översta raden anger namnet på variablerna. Trots namnet så kan även andra specialtecken än komma användas som avgränsare, exempelvis semikolon (se figur).  
+<img src="images/csv_data.PNG" alt="Kommaavgränsade data" width="40%"/>  
+Figur 1: _En .csv-fil öppnad i en textredigerare._   
 
-## Breda data {#bredaData}
+Om du har dina data i Excel kan du enkelt skapa en csv-kopia av dina data genom att välja `Arkiv` -> `Spara som...` och välja `Kommaavgränsad`i rullmenyn nära `Spara som`-knappen.
 
-Vanligtvis behöver dina data vara i det så-kallade "breda formatet". Breda data (se figur A nedan) innebär att varje deltagare enbart har en rad, till skillnad från långa data (se figur B nedan) där varje deltagare kan ha fler rader.
-
-<img src="images/wide_data.JPG" alt="Breda data" width="60%"/>  
-Figur A: _Data i brett format._  
-
-<img src="images/long_data.JPG" alt="Långa data" width="45%"/>  
-Figur B: _Data i långt format._  

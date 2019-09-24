@@ -1,0 +1,19 @@
+# T-Test: One sample {#one-sample-t-test}
+
+#### Hur du gör ett one-sample t-test i jamovi: {-}
+
+1. Du behöver en kontinuerlig variabel och ett medelvärde att testa mot. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivåer)] så att den kontinuerliga variabeln är markerad med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.  
+Ett korrekt dataset bör se ut ungefär såhär:  
+<img src="images/data_format/data_format_ttest_one_sample.JPG" alt="Data till One Sample T-Test." width="30%"/>  
+
+2. Välj `Analyses` -> `T-Tests` -> `One Sample T-Test`.  
+<img src="images/select/select_ttest_one_sample.JPG" width="40%"/> 
+
+3. Flytta din kontinuerliga variabel till __Dependent Variables__.  
+<img src="images/add_var/add_var_ttest_one_sample.JPG" width="70%"/> 
+
+4. Leta reda på sektionen __Hypothesis__ längre ner. Vid __Test value__ fyller du i det medelvärde du vill testa mot.  
+<img src="images/add_var/add_var_ttest_one_sample_2.JPG" width="70%"/> 
+
+5. Resultatet visas i den högra panelen.  
+

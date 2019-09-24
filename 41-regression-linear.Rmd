@@ -1,0 +1,19 @@
+# (PART\*) Regression {-}
+
+# Regression: Linjär {#linear-regression}  
+
+#### Hur du gör en linjär regression i jamovi: {-}
+
+Du behöver två kontinuerliga variabler: en utfallsvariabel och en prediktorvariabel. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivåer)] så att båda variablerna är markerade med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.  
+Ett korrekt dataset bör se ut ungefär såhär:  
+<img src="images/data_format/data_format_regression.JPG" width="25%"/>  
+
+2. Välj `Analyses` -> `Regression` -> `Linear Regression`.  
+<img src="images/select/select_regression_linear.JPG" width="40%"/> 
+
+3. Flytta din utfallsvariabel __Dependent Variable__ and din prediktor till __Covariates__. 
+<img src="images/add_var/add_var_regression.JPG" width="70%"/> 
+
+4. Resultaten visas i den högra panelen:  
+<img src="images/output/output_regression.JPG" width="50%"/> 
+

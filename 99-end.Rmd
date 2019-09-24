@@ -1,0 +1,6 @@
+# (PART) Mer om jamovi {-}
+
+# Nästa steg
+
+För att lära dig mer om jamovi och statistik rekommenderar jag e-boken <a href="https://www.learnstatswithjamovi.com/">Learning statistics with jamovi</a> (gratis!) av Navarro och Foxcroft.  
+

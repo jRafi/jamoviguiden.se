@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 T-Test: Paired samples | jamoviguiden</title>
+  <meta name="description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 T-Test: Paired samples | jamoviguiden" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://jamoviguiden.se" />
+  <meta property="og:image" content="https://jamoviguiden.se/images/pixel.jpg" />
+  <meta property="og:description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
+  <meta name="github-repo" content="jRafi/jamoviguiden" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 T-Test: Paired samples | jamoviguiden" />
+  
+  <meta name="twitter:description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
+  <meta name="twitter:image" content="https://jamoviguiden.se/images/pixel.jpg" />
+
+<meta name="author" content="Jonas Rafi" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="oberoende-t-test.html"/>
+<link rel="next" href="one-sample-t-test.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127170706-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127170706-3');
+</script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "#4b81e8"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "message": "Den här webbplatsen använder cookies.\n",
+    "dismiss": "Ok"
+  }
+})});
+</script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Valkommen</a></li>
+<li class="part"><span><b>Kom igång</b></span></li>
+<li class="chapter" data-level="1" data-path="ladda-in-data-i-jamovi.html"><a href="ladda-in-data-i-jamovi.html"><i class="fa fa-check"></i><b>1</b> Ladda in data i jamovi</a></li>
+<li class="chapter" data-level="2" data-path="skalnivåer.html"><a href="skalnivåer.html"><i class="fa fa-check"></i><b>2</b> Ange skalnivåer</a></li>
+<li class="chapter" data-level="3" data-path="deskriptiva-analyser.html"><a href="deskriptiva-analyser.html"><i class="fa fa-check"></i><b>3</b> Deskriptiva analyser</a></li>
+<li class="part"><span><b>T-Test</b></span></li>
+<li class="chapter" data-level="4" data-path="oberoende-t-test.html"><a href="oberoende-t-test.html"><i class="fa fa-check"></i><b>4</b> T-Test: Oberoende</a></li>
+<li class="chapter" data-level="5" data-path="paired-samples-t-test.html"><a href="paired-samples-t-test.html"><i class="fa fa-check"></i><b>5</b> T-Test: Paired samples</a></li>
+<li class="chapter" data-level="6" data-path="one-sample-t-test.html"><a href="one-sample-t-test.html"><i class="fa fa-check"></i><b>6</b> T-Test: One sample</a></li>
+<li class="part"><span><b>ANOVA</b></span></li>
+<li class="chapter" data-level="7" data-path="oneway-anova.html"><a href="oneway-anova.html"><i class="fa fa-check"></i><b>7</b> ANOVA: Envägs</a></li>
+<li class="chapter" data-level="8" data-path="factorial-anova.html"><a href="factorial-anova.html"><i class="fa fa-check"></i><b>8</b> ANOVA: Factorial</a></li>
+<li class="chapter" data-level="9" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html"><i class="fa fa-check"></i><b>9</b> ANOVA: Repeated Measures</a></li>
+<li class="chapter" data-level="10" data-path="mixed-anova.html"><a href="mixed-anova.html"><i class="fa fa-check"></i><b>10</b> ANOVA: Mixed</a></li>
+<li class="part"><span><b>Regression</b></span></li>
+<li class="chapter" data-level="11" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>11</b> Regression: Linjär</a></li>
+<li class="chapter" data-level="12" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>12</b> Regression: Logistisk</a></li>
+<li class="part"><span><b>I Mer om jamovi</b></span></li>
+<li class="chapter" data-level="13" data-path="nasta-steg.html"><a href="nasta-steg.html"><i class="fa fa-check"></i><b>13</b> Nästa steg</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">jamoviguiden</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="paired-samples-t-test" class="section level1">
+<h1><span class="header-section-number">5</span> T-Test: Paired samples</h1>
+<div id="how-to-perform-a-paired-samples-t-test-in-jamovi" class="section level4 unnumbered">
+<h4>How to perform a paired samples t-test in jamovi:</h4>
+<ol style="list-style-type: decimal">
+<li><p>Du behöver två kontinuerliga variabler. Kontrollera att skalnivåerna är valda<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> så att båda de kontinuerliga variablerna är markerade med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/> (se avsnitt <a href="skalnivåer.html#skalnivåer">2</a>).<br />
+Ett korrekt dataset bör se ut ungefär såhär:<br />
+<img src="images/data_format/data_format_ttest_paired.JPG" width="40%"/></p></li>
+<li><p>Välj <code>Analyses</code> -&gt; <code>T-Tests</code> -&gt; <code>Paired Samples T-Test</code>.<br />
+<img src="images/select/select_ttest_paired.JPG" width="40%"/></p></li>
+<li><p>Flytta dina två kontinuerliga variabler till <strong>Paired variables</strong>.<br />
+<img src="images/add_var/add_var_ttest_paired.JPG" width="70%"/></p></li>
+<li><p>Resultatet visas i den högra panelen.</p></li>
+</ol>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="2">
+<li id="fn2"><p>Val av skalnivåer demonstreras i avsnitt <a href="skalnivåer.html#skalnivåer">2</a><a href="paired-samples-t-test.html#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="oberoende-t-test.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="one-sample-t-test.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/jRafi/jamoviguiden/edit/master/22-t-test-paired.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

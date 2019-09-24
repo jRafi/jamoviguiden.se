@@ -1,0 +1,18 @@
+# Regression: Logistisk {#logistic-regression}  
+
+#### Hur du gör en logistisk regression i jamovi: {-}
+
+
+1. Du behöver en kontinuerlig prediktor och en kategorisk utfallsvariabel. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivåer)] så att prediktorn är markerad med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/> och utfallsvariabeln med <img src="images/icons/nominal.JPG" width="3%" alt=" ikonen för grupperade data"/>.  
+Ett korrekt dataset bör se ut ungefär såhär:  
+<img src="images/data_format/data_format_regression_logistic.JPG" width="25%"/>  
+
+2. Välj `Analyses` -> `Regression`. Om utfallsvariabeln består av nominaldata, välj `2 Outcomes` om den består av två nivåer, eller `N Outcomes` om den består av _fler_ än två nivåer. Om utfallsvariabeln består av ordinaldata, välj istället `Ordinal Outcomes`.  
+<img src="images/select/select_regression_logistic.JPG" width="40%"/> 
+
+3. Flytta din utfallsvariabel till __Dependent Variable__ och din prediktor till __Covariates__.  
+<img src="images/add_var/add_var_regression_logistic.JPG" width="70%"/> 
+
+4. Resultaten visas i den högra panelen:  
+<img src="images/output/output_regression_logistic.JPG" width="50%"/> 
+

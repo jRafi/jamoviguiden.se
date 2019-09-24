@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Del 1 Ladda in data i jamovi | Kom igång med jamovi</title>
-  <meta name="description" content="Snabbsstartsguide till jamovi.">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Ladda in data i jamovi | jamoviguiden</title>
+  <meta name="description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Del 1 Ladda in data i jamovi | Kom igång med jamovi" />
+  <meta property="og:title" content="1 Ladda in data i jamovi | jamoviguiden" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://jrafi.se/jamovi" />
-  
-  <meta property="og:description" content="Snabbsstartsguide till jamovi." />
-  <meta name="github-repo" content="jRafi/KIMJ" />
+  <meta property="og:url" content="https://jamoviguiden.se" />
+  <meta property="og:image" content="https://jamoviguiden.se/images/pixel.jpg" />
+  <meta property="og:description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
+  <meta name="github-repo" content="jRafi/jamoviguiden" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Del 1 Ladda in data i jamovi | Kom igång med jamovi" />
+  <meta name="twitter:title" content="1 Ladda in data i jamovi | jamoviguiden" />
   
-  <meta name="twitter:description" content="Snabbsstartsguide till jamovi." />
+  <meta name="twitter:description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
+  <meta name="twitter:image" content="https://jamoviguiden.se/images/pixel.jpg" />
+
+<meta name="author" content="Jonas Rafi" />
+
+
+<meta name="date" content="2019-09-24" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-
-<meta name="author" content="Jonas Rafi">
-
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
-  
-<link rel="prev" href="index.html">
-<link rel="next" href="deskriptiva-analyser.html">
+<link rel="prev" href="index.html"/>
+<link rel="next" href="skalnivåer.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -56,6 +56,27 @@
 
   gtag('config', 'UA-127170706-3');
 </script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#edeff5",
+      "text": "#838391"
+    },
+    "button": {
+      "background": "#4b81e8"
+    }
+  },
+  "theme": "classic",
+  "content": {
+    "message": "Den här webbplatsen använder cookies.\n",
+    "dismiss": "Ok"
+  }
+})});
+</script>
 
 
 
@@ -72,35 +93,25 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">jamoviguiden.se</a></li>
-
-<li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Översikt</a></li>
-<li class="chapter" data-level="1" data-path="ladda-in-data-i-jamovi.html"><a href="ladda-in-data-i-jamovi.html"><i class="fa fa-check"></i><b>1</b> Ladda in data i jamovi</a><ul>
-<li class="chapter" data-level="1.1" data-path="ladda-in-data-i-jamovi.html"><a href="ladda-in-data-i-jamovi.html#oppna-en-fil"><i class="fa fa-check"></i><b>1.1</b> Öppna en fil</a></li>
-<li class="chapter" data-level="1.2" data-path="ladda-in-data-i-jamovi.html"><a href="ladda-in-data-i-jamovi.html#csvData"><i class="fa fa-check"></i><b>1.2</b> Kommaavgränsade data</a></li>
-<li class="chapter" data-level="1.3" data-path="ladda-in-data-i-jamovi.html"><a href="ladda-in-data-i-jamovi.html#bredaData"><i class="fa fa-check"></i><b>1.3</b> Breda data</a></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="deskriptiva-analyser.html"><a href="deskriptiva-analyser.html"><i class="fa fa-check"></i><b>2</b> Deskriptiva analyser</a></li>
-<li class="chapter" data-level="3" data-path="t-test.html"><a href="t-test.html"><i class="fa fa-check"></i><b>3</b> T-test</a><ul>
-<li class="chapter" data-level="3.1" data-path="t-test.html"><a href="t-test.html#independent-samples-t-test"><i class="fa fa-check"></i><b>3.1</b> Independent Samples T-Test</a></li>
-<li class="chapter" data-level="3.2" data-path="t-test.html"><a href="t-test.html#paired-samples-t-test"><i class="fa fa-check"></i><b>3.2</b> Paired Samples T-Test</a></li>
-<li class="chapter" data-level="3.3" data-path="t-test.html"><a href="t-test.html#one-sample-t-test"><i class="fa fa-check"></i><b>3.3</b> One Sample T-Test</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="anova.html"><a href="anova.html"><i class="fa fa-check"></i><b>4</b> ANOVA</a><ul>
-<li class="chapter" data-level="4.1" data-path="anova.html"><a href="anova.html#anova-1"><i class="fa fa-check"></i><b>4.1</b> ANOVA</a></li>
-<li class="chapter" data-level="4.2" data-path="anova.html"><a href="anova.html#factorial-anova"><i class="fa fa-check"></i><b>4.2</b> Factorial ANOVA</a></li>
-<li class="chapter" data-level="4.3" data-path="anova.html"><a href="anova.html#repeated-measures-anova"><i class="fa fa-check"></i><b>4.3</b> Repeated Measures ANOVA</a></li>
-<li class="chapter" data-level="4.4" data-path="anova.html"><a href="anova.html#mixed-anova"><i class="fa fa-check"></i><b>4.4</b> Mixed ANOVA</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="regression.html"><a href="regression.html"><i class="fa fa-check"></i><b>5</b> Regression</a><ul>
-<li class="chapter" data-level="5.1" data-path="regression.html"><a href="regression.html#regression-1"><i class="fa fa-check"></i><b>5.1</b> Regression</a></li>
-<li class="chapter" data-level="5.2" data-path="regression.html"><a href="regression.html#logistic-regression"><i class="fa fa-check"></i><b>5.2</b> Logistic Regression</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="nasta-steg.html"><a href="nasta-steg.html"><i class="fa fa-check"></i><b>6</b> Nästa steg</a></li>
-<li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Om jamoviguiden</a></li>
+<li class="part"><span><b>Kom igång</b></span></li>
+<li class="chapter" data-level="1" data-path="ladda-in-data-i-jamovi.html"><a href="ladda-in-data-i-jamovi.html"><i class="fa fa-check"></i><b>1</b> Ladda in data i jamovi</a></li>
+<li class="chapter" data-level="2" data-path="skalnivåer.html"><a href="skalnivåer.html"><i class="fa fa-check"></i><b>2</b> Ange skalnivåer</a></li>
+<li class="chapter" data-level="3" data-path="deskriptiva-analyser.html"><a href="deskriptiva-analyser.html"><i class="fa fa-check"></i><b>3</b> Deskriptiva analyser</a></li>
+<li class="part"><span><b>T-Test</b></span></li>
+<li class="chapter" data-level="4" data-path="oberoende-t-test.html"><a href="oberoende-t-test.html"><i class="fa fa-check"></i><b>4</b> T-Test: Oberoende</a></li>
+<li class="chapter" data-level="5" data-path="beroende-t-test.html"><a href="beroende-t-test.html"><i class="fa fa-check"></i><b>5</b> T-Test: Beroende</a></li>
+<li class="chapter" data-level="6" data-path="one-sample-t-test.html"><a href="one-sample-t-test.html"><i class="fa fa-check"></i><b>6</b> T-Test: One sample</a></li>
+<li class="part"><span><b>ANOVA</b></span></li>
+<li class="chapter" data-level="7" data-path="oneway-anova.html"><a href="oneway-anova.html"><i class="fa fa-check"></i><b>7</b> ANOVA: Envägs</a></li>
+<li class="chapter" data-level="8" data-path="factorial-anova.html"><a href="factorial-anova.html"><i class="fa fa-check"></i><b>8</b> ANOVA: Faktoriell</a></li>
+<li class="chapter" data-level="9" data-path="repeated-measures-anova.html"><a href="repeated-measures-anova.html"><i class="fa fa-check"></i><b>9</b> ANOVA: Upprepade mätningar</a></li>
+<li class="chapter" data-level="10" data-path="mixed-anova.html"><a href="mixed-anova.html"><i class="fa fa-check"></i><b>10</b> ANOVA: Mixed</a></li>
+<li class="part"><span><b>Regression</b></span></li>
+<li class="chapter" data-level="11" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>11</b> Regression: Linjär</a></li>
+<li class="chapter" data-level="12" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>12</b> Regression: Logistisk</a></li>
+<li class="part"><span><b>I Mer om jamovi</b></span></li>
+<li class="chapter" data-level="13" data-path="nasta-steg.html"><a href="nasta-steg.html"><i class="fa fa-check"></i><b>13</b> Nästa steg</a></li>
 </ul>
 
       </nav>
@@ -110,7 +121,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Kom igång med jamovi</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">jamoviguiden</a>
           </h1>
         </div>
 
@@ -119,28 +130,19 @@
 
             <section class="normal" id="section-">
 <div id="ladda-in-data-i-jamovi" class="section level1">
-<h1><span class="header-section-number">Del 1</span> Ladda in data i jamovi</h1>
-<p>Du kan ladda in data i jamovi antingen från andra statistikprogram (SPSS, Stata, SAS, JASP) eller från en textfil (.txt eller .csv) med <strong>kommaavgränsade data</strong> (<a href="ladda-in-data-i-jamovi.html#csvData">1.2</a>). För att kunna utföra de vanligaste analyserna (t-test, ANOVA och regression) behöver dina data vara i <strong>brett format</strong> (<a href="ladda-in-data-i-jamovi.html#bredaData">1.3</a>).</p>
-<div id="oppna-en-fil" class="section level2">
-<h2><span class="header-section-number">1.1</span> Öppna en fil</h2>
-<ol style="list-style-type: decimal">
-<li><p>Klicka på menyikonen <img src="images/jamovi_menu_icon.JPG" alt="Kommaavgränsade data" width="3%"/> längst upp till vänster</p></li>
-<li><p>Kontrollera att <code>This PC/Mac</code> är valt och klicka på <code>Browse</code></p></li>
-<li><p>Välj den datafil du vill öppna. Läs mer om vilka filtyper som stöds här nedanför</p></li>
-</ol>
+<h1><span class="header-section-number">1</span> Ladda in data i jamovi</h1>
+<div id="oppna-en-fil-i-jamovi" class="section level4 unnumbered">
+<h4>Öppna en fil i jamovi</h4>
+<p>För att öppna en fil i jamovi, klicka på menyikonen <img src="images/icons/menu.JPG" width="3%"/> och välj <code>Open file</code> -&gt; <code>Browse</code>.</p>
+<p>Ofta används “komma-avgränsade filer” (med filändelsen .csv eller .txt) till jamovi. Även filformat från följande statistikprogram kan läsas in: JASP (.jasp), R (.RData, .RDS), SAS (.xpt, .sas7bdat), SPSS (.sav, .zsav, .por) och Stata (.dta).</p>
+<p>Har du data i Excel men vet inte hur du ska ladda in filen i jamovi? Fortsätt då att läsa nedanstående stycke.</p>
 </div>
-<div id="csvData" class="section level2">
-<h2><span class="header-section-number">1.2</span> Kommaavgränsade data</h2>
-<p>En kommaavgränsad fil har ändelsen .csv och innehåller data som oformaterad text, där celler är separerade av semikolon (se bild nedan) eller annat specialtecken. Har du dina data i Excel kan du skapa en csv-fil genom att välja <code>Arkiv -&gt; Spara som...</code>och välja <code>Kommaavgränsad</code> i rullisten nära <code>Spara som</code>-knappen.</p>
-<p><img src="images/csv_data.png" alt="Kommaavgränsade data" width="60%"/></p>
-</div>
-<div id="bredaData" class="section level2">
-<h2><span class="header-section-number">1.3</span> Breda data</h2>
-<p>Vanligtvis behöver dina data vara i det så-kallade “breda formatet”. Breda data (se figur A nedan) innebär att varje deltagare enbart har en rad, till skillnad från långa data (se figur B nedan) där varje deltagare kan ha fler rader.</p>
-<p><img src="images/wide_data.JPG" alt="Breda data" width="60%"/><br />
-Figur A: <em>Data i brett format.</em></p>
-<p><img src="images/long_data.JPG" alt="Långa data" width="45%"/><br />
-Figur B: <em>Data i långt format.</em></p>
+<div id="kommaavgransade-data" class="section level4 unnumbered">
+<h4>Kommaavgränsade data</h4>
+<p>En fil med kommaavgränsade värden (csv) använder kommatecken för att separera värden. Filen består av oformaterad data där varje rad är en observation. Den översta raden anger namnet på variablerna. Trots namnet så kan även andra specialtecken än komma användas som avgränsare, exempelvis semikolon (se figur).<br />
+<img src="images/csv_data.png" alt="Kommaavgränsade data" width="40%"/><br />
+Figur 1: <em>En .csv-fil öppnad i en textredigerare.</em></p>
+<p>Om du har dina data i Excel kan du enkelt skapa en csv-kopia av dina data genom att välja <code>Arkiv</code> -&gt; <code>Spara som...</code> och välja <code>Kommaavgränsad</code>i rullmenyn nära <code>Spara som</code>-knappen.</p>
 
 </div>
 </div>
@@ -150,7 +152,7 @@ Figur B: <em>Data i långt format.</em></p>
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="deskriptiva-analyser.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="skalnivåer.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -164,7 +166,7 @@ Figur B: <em>Data i långt format.</em></p>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
+"github": true,
 "facebook": true,
 "twitter": true,
 "google": false,
@@ -180,8 +182,8 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": null,
-"text": null
+"link": "https://github.com/jRafi/jamoviguiden/edit/master/01-ladda-in-data.Rmd",
+"text": "Edit"
 },
 "history": {
 "link": null,
@@ -189,7 +191,8 @@ gitbook.start({
 },
 "download": null,
 "toc": {
-"collapse": "subsection"
+"collapse": "section",
+"scroll_highlight": true
 }
 });
 });

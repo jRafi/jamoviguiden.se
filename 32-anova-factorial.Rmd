@@ -1,0 +1,17 @@
+# ANOVA: Faktoriell {#factorial-anova}  
+
+#### Hur du gör en faktoriell ANOVA i jamovi: {-}
+
+1. Du behöver två gruppvariabler och en kontinuerlig utfallsvariabel. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivåer)] så att gruppvariablerna är markerade med <img src="images/icons/nominal.JPG" width="3%" alt=" ikonen för grupperade data"/> och den kontinuerliga variabeln är markerad med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.  
+Ett korrekt dataset bör se ut ungefär såhär:  
+<img src="images/data_format/data_format_anova_factorial.JPG" width="40%"/>  
+
+2. Välj `Analyses` -> `ANOVA` -> `ANOVA`.  
+<img src="images/select/select_anova.JPG" width="40%"/> 
+
+3. Flytta din kontinuerliga variabel till __Dependent Variable__ och dina grupperingsvariabler till __Fixed Factors__.   
+<img src="images/add_var/add_var_anova_factorial.JPG" width="70%"/> 
+
+4. Resultatet visas i den högra panelen:  
+<img src="images/output/output_anova_factorial.JPG" width="70%"/> 
+

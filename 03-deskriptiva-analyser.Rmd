@@ -1,0 +1,20 @@
+# Deskriptiva analyser {#deskriptiva-analyser}
+
+#### Hur du utför deskriptiva analyser och skapar grafer i jamovi: {-}
+
+1. Väj `Analyses` -> `Exploration` -> `Descriptives`.  
+<img src="images/select/select_descriptives.JPG" width="60%"/> 
+
+2. Flytta variablerna du vill ha deskriptiva analyser för till __Variables__.  
+<img src="images/add_var/add_var_descriptives.JPG" width="70%"/> 
+
+3. Resultatet visas i den högra panelen. Högerklicka på tabellen för att spara eller kopiera den.  
+<img src="images/output/output_descriptives1.JPG" width="40%"/>
+
+4. För att dela upp analysen på en kategorisk variabel (ex. kön), flytta den variabeln till __Split by__.
+
+5. Klikca på fliken __Statistics__ för att se fler alternativ.
+<img src="images/select/select_descriptives_statistics.JPG" width="60%"/> 
+
+6. För att skapa en graf baserad på ovanstående val, klicka på fliken __Plots__ och bocka i rutan för den graf du vill ha. Högerklicka på grafen för att spara eller kopiera.  
+<img src="images/select/select_descriptives_plots.JPG" width="60%"/> 

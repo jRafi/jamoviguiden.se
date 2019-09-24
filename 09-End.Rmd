@@ -1,3 +1,0 @@
-# Nästa steg
-
-Behöver du fördjupa dig i någon del rekommenderar jag **learning statistics with jamovi** (2018) av Navarro och Foxcroft, som finns gratis för nedladdning.

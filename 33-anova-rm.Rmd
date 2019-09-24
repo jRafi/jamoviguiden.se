@@ -1,0 +1,21 @@
+# ANOVA: Upprepade mätningar {#repeated-measures-anova}  
+
+#### Hur du utför en ANOVA med upprepade mätningar i jamovi: {-}
+
+
+1. Du behöver en kontinuerlig variabel för varje mättillfälle. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivåer)] så att alla kontinuerliga variabler är markerade med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.  
+Ett korrekt dataset bör se ut ungefär såhär:  
+<img src="images/data_format/data_format_anova_repeated.JPG" width="40%"/>  
+
+2. Välj `Analyses` -> `ANOVA` -> `Repeated Measures ANOVA`.  
+<img src="images/select/select_anova_repeated.JPG" width="40%"/> 
+
+3. I rutan __Repeated Measures Factors__: skriv in namnet på din utfallsvariabel (ex. Mitt_utfallsmått) och skriv in namnet för varje mättillfälle (ex Pre, Post och 12-månadersuppföljning). Bilderna nedan visar rutan utan (vänster) respektive med (höger) ifyllda värden.  
+<img src="images/add_var/add_var_anova_repeated_naming_1.JPG" width="35%"/> `->` <img src="images/add_var/add_var_anova_repeated_naming_2.JPG" width="35%"/> 
+
+4. Flytta dina utfallsvariabler till sina respektive celler i __Repeated Measures Cells__.  
+<img src="images/add_var/add_var_anova_repeated.JPG" width="70%"/> 
+
+5. Resultaten visas i den högra panelen:  
+<img src="images/output/output_anova_repeated.JPG" width="70%"/> 
+

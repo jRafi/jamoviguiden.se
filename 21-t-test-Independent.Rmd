@@ -14,5 +14,8 @@ Ett korrekt dataset bör se ut ungefär såhär:
 3. Flytta din utfallsvariabel till __Dependent Variables__ och din gruppvariabel till __Grouping Variable__.  
 <img src="images/add_var/add_var_ttest_independent.JPG" width="70%"/> 
 
-4. Resultatet visas i den högra panelen.
+4. Resultatet visas i den högra panelen.  
+<img src="images/output/output_t-test_independent.JPG" width="60%"/> 
+
+
 

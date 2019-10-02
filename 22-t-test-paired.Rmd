@@ -12,5 +12,6 @@ Ett korrekt dataset bör se ut ungefär såhär:
 3. Flytta dina två kontinuerliga variabler till __Paired variables__.  
 <img src="images/add_var/add_var_ttest_paired.JPG" width="70%"/> 
 
-4. Resultatet visas i den högra panelen.
+4. Resultatet visas i den högra panelen.  
+<img src="images/output/output_t-test_paired.JPG" width="60%"/> 
 

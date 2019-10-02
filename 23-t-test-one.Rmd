@@ -16,4 +16,5 @@ Ett korrekt dataset bör se ut ungefär såhär:
 <img src="images/add_var/add_var_ttest_one_sample_2.JPG" width="70%"/> 
 
 5. Resultatet visas i den högra panelen.  
+<img src="images/output/output_t-test_one_sample.JPG" width="60%"/> 
 

@@ -13,9 +13,9 @@ Har du data i Excel men vet inte hur du ska ladda in filen i jamovi? Fortsätt d
 
 #### Kommaavgränsade data #### {-}
 
-En fil med kommaavgränsade värden (csv) använder kommatecken för att separera värden. Filen består av oformaterad data där varje rad är en observation. Den översta raden anger namnet på variablerna. Trots namnet så kan även andra specialtecken än komma användas som avgränsare, exempelvis semikolon (se figur).  
+En fil med kommaavgränsade värden (csv) är en datafil i sin enklaste form. Filen består av data där varje rad är en observation, och varje värde är avgränsat med ett kommatecken eller semikolon. Den översta raden anger namnet på variablerna.  
 <img src="images/csv_data.PNG" alt="Kommaavgränsade data" width="40%"/>  
-Figur 1: _En .csv-fil öppnad i en textredigerare._   
+Bild: _En .csv-fil öppnad i en textredigerare._   
 
-Om du har dina data i Excel kan du enkelt skapa en csv-kopia av dina data genom att välja `Arkiv` -> `Spara som...` och välja `Kommaavgränsad`i rullmenyn nära `Spara som`-knappen.
+Om du har dina data i Excel kan du enkelt skapa en csv-kopia av dina data genom att välja `Arkiv` -> `Spara som...` och välja `Kommaavgränsad`i rullmenyn nära `Spara som`-knappen. Därefter kan du ladda in filen i jamovi.
 

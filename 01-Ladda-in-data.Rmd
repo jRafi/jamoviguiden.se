@@ -6,14 +6,14 @@
 
 För att öppna en fil i jamovi, klicka på menyikonen <img src="images/icons/menu.JPG" width="3%"/> och välj `Open file` -> `Browse`.
 
-Ofta används "komma-avgränsade filer" (med filändelsen .csv eller .txt) till jamovi. Även filformat från följande statistikprogram kan läsas in: JASP (.jasp), R (.RData, .RDS), SAS (.xpt, .sas7bdat), SPSS (.sav, .zsav, .por) och Stata (.dta).
+Filer från Excel (.xlsx) och LibreOffice (.odt) stöds i jamovi version 1.2.0^[Släpps i april 2020, men finns att ladda ner som ofullständig version på jamovi.org]. I äldre versioner av jamovi används ofta "komma-avgränsade filer" (med filändelsen .csv eller .txt). Även filformat från följande statistikprogram kan läsas in: JASP (.jasp), R (.RData, .RDS), SAS (.xpt, .sas7bdat), SPSS (.sav, .zsav, .por) och Stata (.dta).
 
 Har du data i Excel men vet inte hur du ska ladda in filen i jamovi? Fortsätt då att läsa nedanstående stycke.  
 
 
 #### Kommaavgränsade data #### {-}
 
-En fil med kommaavgränsade värden (csv) är en datafil i sin enklaste form. Filen består av data där varje rad är en observation, och varje värde är avgränsat med ett kommatecken eller semikolon. Den översta raden anger namnet på variablerna.  
+En fil med kommaavgränsade värden är en oformaterad textfil med data. Precis som i en Excel-fil består en rad av en observation. Den översta raden anger namnet på variablerna. Alla värden i textfilen är avgränsade med ett kommatecken eller semikolon.  
 <img src="images/csv_data.PNG" alt="Kommaavgränsade data" width="40%"/>  
 Bild: _En .csv-fil öppnad i en textredigerare._   
 

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>6 T-Test: One sample | jamoviguiden</title>
   <meta name="description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
-  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
   <meta property="og:title" content="6 T-Test: One sample | jamoviguiden" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Jonas Rafi" />
 
 
-<meta name="date" content="2019-10-02" />
+<meta name="date" content="2020-01-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -40,6 +40,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -111,7 +114,7 @@ window.cookieconsent.initialise({
 <li class="chapter" data-level="11" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>11</b> Regression: Linjär</a></li>
 <li class="chapter" data-level="12" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>12</b> Regression: Logistisk</a></li>
 <li class="part"><span><b>I Mer om jamovi</b></span></li>
-<li class="chapter" data-level="13" data-path="nasta-steg.html"><a href="nasta-steg.html"><i class="fa fa-check"></i><b>13</b> Nästa steg</a></li>
+<li class="chapter" data-level="13" data-path="nästa-steg.html"><a href="nästa-steg.html"><i class="fa fa-check"></i><b>13</b> Nästa steg</a></li>
 </ul>
 
       </nav>
@@ -131,10 +134,10 @@ window.cookieconsent.initialise({
             <section class="normal" id="section-">
 <div id="one-sample-t-test" class="section level1">
 <h1><span class="header-section-number">6</span> T-Test: One sample</h1>
-<div id="hur-du-gor-ett-one-sample-t-test-i-jamovi" class="section level4 unnumbered">
+<div id="hur-du-gör-ett-one-sample-t-test-i-jamovi" class="section level4 unnumbered">
 <h4>Hur du gör ett one-sample t-test i jamovi:</h4>
 <ol style="list-style-type: decimal">
-<li><p>Du behöver en kontinuerlig variabel och ett medelvärde att testa mot. Kontrollera att skalnivåerna är valda<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> så att den kontinuerliga variabeln är markerad med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.<br />
+<li><p>Du behöver en kontinuerlig variabel och ett medelvärde att testa mot. Kontrollera att skalnivåerna är valda<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> så att den kontinuerliga variabeln är markerad med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.<br />
 Ett korrekt dataset bör se ut ungefär såhär:<br />
 <img src="images/data_format/data_format_ttest_one_sample.JPG" alt="Data till One Sample T-Test." width="30%"/></p></li>
 <li><p>Välj <code>Analyses</code> -&gt; <code>T-Tests</code> -&gt; <code>One Sample T-Test</code>.<br />
@@ -154,8 +157,8 @@ Ett korrekt dataset bör se ut ungefär såhär:<br />
 
 <div class="footnotes">
 <hr />
-<ol start="3">
-<li id="fn3"><p>Val av skalnivåer demonstreras i avsnitt <a href="skalnivåer.html#skalnivåer">2</a><a href="one-sample-t-test.html#fnref3" class="footnote-back">↩</a></p></li>
+<ol start="4">
+<li id="fn4"><p>Val av skalnivåer demonstreras i avsnitt <a href="skalnivåer.html#skalnivåer">2</a><a href="one-sample-t-test.html#fnref4" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>
@@ -169,11 +172,13 @@ Ett korrekt dataset bör se ut ungefär såhär:<br />
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -181,12 +186,11 @@ gitbook.start({
 "github": true,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -198,6 +202,10 @@ gitbook.start({
 "text": "Edit"
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

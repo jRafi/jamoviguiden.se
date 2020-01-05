@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Ladda in data i jamovi | jamoviguiden</title>
   <meta name="description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
-  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Ladda in data i jamovi | jamoviguiden" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Jonas Rafi" />
 
 
-<meta name="date" content="2019-10-02" />
+<meta name="date" content="2020-01-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -40,6 +40,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -111,7 +114,7 @@ window.cookieconsent.initialise({
 <li class="chapter" data-level="11" data-path="linear-regression.html"><a href="linear-regression.html"><i class="fa fa-check"></i><b>11</b> Regression: Linjär</a></li>
 <li class="chapter" data-level="12" data-path="logistic-regression.html"><a href="logistic-regression.html"><i class="fa fa-check"></i><b>12</b> Regression: Logistisk</a></li>
 <li class="part"><span><b>I Mer om jamovi</b></span></li>
-<li class="chapter" data-level="13" data-path="nasta-steg.html"><a href="nasta-steg.html"><i class="fa fa-check"></i><b>13</b> Nästa steg</a></li>
+<li class="chapter" data-level="13" data-path="nästa-steg.html"><a href="nästa-steg.html"><i class="fa fa-check"></i><b>13</b> Nästa steg</a></li>
 </ul>
 
       </nav>
@@ -131,20 +134,26 @@ window.cookieconsent.initialise({
             <section class="normal" id="section-">
 <div id="ladda-in-data-i-jamovi" class="section level1">
 <h1><span class="header-section-number">1</span> Ladda in data i jamovi</h1>
-<div id="oppna-en-fil-i-jamovi" class="section level4 unnumbered">
+<div id="öppna-en-fil-i-jamovi" class="section level4 unnumbered">
 <h4>Öppna en fil i jamovi</h4>
 <p>För att öppna en fil i jamovi, klicka på menyikonen <img src="images/icons/menu.JPG" width="3%"/> och välj <code>Open file</code> -&gt; <code>Browse</code>.</p>
-<p>Ofta används “komma-avgränsade filer” (med filändelsen .csv eller .txt) till jamovi. Även filformat från följande statistikprogram kan läsas in: JASP (.jasp), R (.RData, .RDS), SAS (.xpt, .sas7bdat), SPSS (.sav, .zsav, .por) och Stata (.dta).</p>
+<p>Filer från Excel (.xlsx) och LibreOffice (.odt) stöds i jamovi version 1.2.0<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>. I äldre versioner av jamovi används ofta “komma-avgränsade filer” (med filändelsen .csv eller .txt). Även filformat från följande statistikprogram kan läsas in: JASP (.jasp), R (.RData, .RDS), SAS (.xpt, .sas7bdat), SPSS (.sav, .zsav, .por) och Stata (.dta).</p>
 <p>Har du data i Excel men vet inte hur du ska ladda in filen i jamovi? Fortsätt då att läsa nedanstående stycke.</p>
 </div>
-<div id="kommaavgransade-data" class="section level4 unnumbered">
+<div id="kommaavgränsade-data" class="section level4 unnumbered">
 <h4>Kommaavgränsade data</h4>
-<p>En fil med kommaavgränsade värden (csv) är en datafil i sin enklaste form. Filen består av data där varje rad är en observation, och varje värde är avgränsat med ett kommatecken eller semikolon. Den översta raden anger namnet på variablerna.<br />
+<p>En fil med kommaavgränsade värden är en oformaterad textfil med data. Precis som i en Excel-fil består en rad av en observation. Den översta raden anger namnet på variablerna. Alla värden i textfilen är avgränsade med ett kommatecken eller semikolon.<br />
 <img src="images/csv_data.png" alt="Kommaavgränsade data" width="40%"/><br />
 Bild: <em>En .csv-fil öppnad i en textredigerare.</em></p>
 <p>Om du har dina data i Excel kan du enkelt skapa en csv-kopia av dina data genom att välja <code>Arkiv</code> -&gt; <code>Spara som...</code> och välja <code>Kommaavgränsad</code>i rullmenyn nära <code>Spara som</code>-knappen. Därefter kan du ladda in filen i jamovi.</p>
 
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Släpps i april 2020, men finns att ladda ner som ofullständig version på jamovi.org<a href="ladda-in-data-i-jamovi.html#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
 </div>
             </section>
 
@@ -157,11 +166,13 @@ Bild: <em>En .csv-fil öppnad i en textredigerare.</em></p>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -169,12 +180,11 @@ gitbook.start({
 "github": true,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -186,6 +196,10 @@ gitbook.start({
 "text": "Edit"
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },

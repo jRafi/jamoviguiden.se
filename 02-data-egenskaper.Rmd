@@ -1,6 +1,6 @@
 # Ange skalnivåer {#skalnivåer}
 
-Innan analyser kan genomföras i jamovi behöver du oftast ange en <a href="https://sv.wikipedia.org/wiki/M%C3%A4tskala">skalnivå</a> för varje variabel som ingår i analysen. När data laddas in i jamovi får variablerna ofta den lägsta nivån (nominal). Det betyder att om du exempelvis vill göra ett two-sample t-test så behöver båda variablerna anges som "kontinuerliga". Notera att jamovi inte skiljer på intervall- och kvotdata, utan kategoriserar all kvantitativ data som kontinuerlig.
+Innan analyser kan genomföras i jamovi behöver du ofta ange en <a href="https://sv.wikipedia.org/wiki/M%C3%A4tskala">skalnivå</a> för de variabler som ingår i analysen. När data laddas in i jamovi får variablerna vanligtvis den lägsta nivån (nominal). Det betyder att om du exempelvis vill göra ett two-sample t-test så behöver båda variablerna ändras från __Nominal__ till __Continuous__. Notera att jamovi inte skiljer på intervall- och kvotdata, utan kategoriserar all kvantitativ data som kontinuerlig.
 
 #### Hur du sätter skalnivån för en variabel {-}
 

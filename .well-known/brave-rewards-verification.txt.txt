@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jamoviguiden.se
+Token: c71b1c1c359265809cae479052f58b1b873e9da30611adeaa091f2ab3ba48c58

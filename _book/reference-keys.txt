@@ -1,0 +1,13 @@
+ladda-in-data-i-jamovi
+skalnivaer
+deskriptiva-analyser
+oberoende-t-test
+beroende-t-test
+one-sample-t-test
+oneway-anova
+factorial-anova
+repeated-measures-anova
+mixed-anova
+linear-regression
+logistic-regression
+nästa-steg

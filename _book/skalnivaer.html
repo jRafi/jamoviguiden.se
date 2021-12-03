@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>12 Regression: Logistisk | jamoviguiden</title>
+  <title>2 Ange skalnivåer | jamoviguiden</title>
   <meta name="description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="12 Regression: Logistisk | jamoviguiden" />
+  <meta property="og:title" content="2 Ange skalnivåer | jamoviguiden" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://jamoviguiden.se" />
   <meta property="og:image" content="https://jamoviguiden.se//images/pixel.jpg" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="jRafi/jamoviguiden" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="12 Regression: Logistisk | jamoviguiden" />
+  <meta name="twitter:title" content="2 Ange skalnivåer | jamoviguiden" />
   
   <meta name="twitter:description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
   <meta name="twitter:image" content="https://jamoviguiden.se//images/pixel.jpg" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="linear-regression.html"/>
-<link rel="next" href="nästa-steg.html"/>
+<link rel="prev" href="ladda-in-data-i-jamovi.html"/>
+<link rel="next" href="deskriptiva-analyser.html"/>
 <script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -136,43 +136,29 @@ window.cookieconsent.initialise({
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="logistic-regression" class="section level1" number="12">
-<h1><span class="header-section-number">12</span> Regression: Logistisk</h1>
-<div id="hur-du-gör-en-logistisk-regression-i-jamovi" class="section level4 unnumbered">
-<h4>Hur du gör en logistisk regression i jamovi:</h4>
+<div id="skalnivaer" class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Ange skalnivåer</h1>
+<p>Innan analyser kan genomföras i jamovi behöver du ofta ange en <a href="https://sv.wikipedia.org/wiki/M%C3%A4tskala">skalnivå</a> för de variabler som ingår i analysen. När data laddas in i jamovi får variablerna vanligtvis den lägsta nivån (nominal). Det betyder att om du exempelvis vill göra ett two-sample t-test så behöver båda variablerna ändras från <strong>Nominal</strong> till <strong>Continuous</strong>. Notera att jamovi inte skiljer på intervall- och kvotdata, utan kategoriserar all kvantitativ data som kontinuerlig.</p>
+<div id="hur-du-sätter-skalnivån-för-en-variabel" class="section level4 unnumbered">
+<h4>Hur du sätter skalnivån för en variabel</h4>
 <ol style="list-style-type: decimal">
-<li><p>Du behöver en <em>kategorisk</em> beroende variabel och en prediktorvariabel.<br />
-Kontrollera att skalnivåerna är valda<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a> så att din beroende variabel är markerad med <img src="images/icons/nominal.JPG" width="3%" alt=" ikonen för grupperade data"/>. Ett lämpligt dataset kan se ut ungefär såhär:<br />
-<img src="images/data_format/data_format_regression_logistic.JPG" width="25%"/></p></li>
-<li><p>Välj <code>Analyses</code> -&gt; <code>Regression</code>.<br />
-Om din beroende variabel består av nominaldata: välj <code>2 Outcomes</code> om den består av två nivåer eller <code>N Outcomes</code> om den består av <em>fler</em> än två nivåer. Om din beroende variabel består av ordinaldata, välj istället <code>Ordinal Outcomes</code>.<br />
-<img src="images/select/select_regression_logistic.JPG" width="40%"/></p></li>
-<li><p>Flytta din beroende variabel till <strong>Dependent Variable</strong>. Flytta sedan kontinuerliga prediktorer till <strong>Covariates</strong> och kategoriska prediktorer till <strong>Factors</strong>.<br />
-<img src="images/add_var/add_var_regression_logistic.JPG" width="70%"/></p></li>
-<li><p>Scrolla ner till <code>Model Coefficients</code> och bocka i rutorna <strong>Odds ratio</strong> och <strong>Confidence interval</strong>.<br />
-<img src="images/select/select_regression_logistic_OR_and_CI.JPG" width="70%"/></p></li>
-<li><p>Resultatet räknas ut direkt:<br />
-<img src="images/output/output_regression_logistic_OR_and_CI.JPG" width="75%"/></p></li>
+<li><p>Dubbelklicka på den variabel vars skalnivå du vill ändra.<br />
+<img src="images/data_format/select_variable.JPG" alt="Wide data" width="60%"/></p></li>
+<li><p>I variabel-fönstret, välj <code>ID</code>, <code>Nominal</code>, <code>Ordinal</code> eller <code>Continuous</code>.<br />
+<img src="images/data_format/set_data_type.jpg" alt="Wide data" width="80%"/></p></li>
+<li><p>Klicka på uppåtpilen för att dölja variabelfönstret, eller klicka på vänster- eller högerpilen för att ändra en annan variabel.<br />
+<img src="images/data_format/set_data_type_2.jpg" alt="Wide data" width="80%"/></p></li>
 </ol>
 
 </div>
-</div>
-
-
-
-<div class="footnotes">
-<hr />
-<ol start="10">
-<li id="fn10"><p>Val av skalnivåer demonstreras i avsnitt <a href="skalnivaer.html#skalnivaer">2</a><a href="logistic-regression.html#fnref10" class="footnote-back">↩︎</a></p></li>
-</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="linear-regression.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="nästa-steg.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ladda-in-data-i-jamovi.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="deskriptiva-analyser.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -203,7 +189,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jRafi/jamoviguiden/edit/master/42-regression-logistic.Rmd",
+"link": "https://github.com/jRafi/jamoviguiden/edit/master/02-data-egenskaper.Rmd",
 "text": "Edit"
 },
 "history": {

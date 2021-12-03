@@ -2,7 +2,7 @@
 
 #### Hur du gör ett beroende t-test (paired samples) i jamovi: {-}
 
-1. Du behöver två kontinuerliga variabler. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivåer)] så att båda de kontinuerliga variablerna är markerade med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.  
+1. Du behöver två kontinuerliga variabler. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivaer)] så att båda de kontinuerliga variablerna är markerade med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.  
 Ett korrekt dataset bör se ut ungefär såhär:  
 <img src="images/data_format/data_format_ttest_paired.JPG" width="40%"/>
 

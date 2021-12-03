@@ -3,7 +3,7 @@
 #### Hur du utför en ANOVA med upprepade mätningar i jamovi: {-}
 
 
-1. Du behöver en kontinuerlig variabel för varje mättillfälle. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivåer)] så att alla kontinuerliga variabler är markerade med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.  
+1. Du behöver en kontinuerlig variabel för varje mättillfälle. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivaer)] så att alla kontinuerliga variabler är markerade med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.  
 Ett korrekt dataset bör se ut ungefär såhär:  
 <img src="images/data_format/data_format_anova_repeated.JPG" width="40%"/>  
 

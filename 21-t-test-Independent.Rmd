@@ -4,7 +4,7 @@
 
 #### Hur du gör ett oberoende t-test (independent samples) i jamovi: {-}
 
-1. Du behöver en gruppvariabel med två nivåer (ex. behandling/kontroll) och en kontinuerlig utfallsvariabel. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivåer)] så att gruppvariabeln är markerad med <img src="images/icons/nominal.JPG" width="3%" alt=" ikonen för grupperade data"/> och den kontinuerliga variabeln är markerad med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.  
+1. Du behöver en gruppvariabel med två nivåer (ex. behandling/kontroll) och en kontinuerlig utfallsvariabel. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivaer)] så att gruppvariabeln är markerad med <img src="images/icons/nominal.JPG" width="3%" alt=" ikonen för grupperade data"/> och den kontinuerliga variabeln är markerad med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.  
 Ett korrekt dataset bör se ut ungefär såhär:  
 <img src="images/data_format/data_format_ttest_independent.JPG" width="40%"/> 
 

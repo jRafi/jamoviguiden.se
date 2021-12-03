@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Deskriptiva analyser | jamoviguiden</title>
   <meta name="description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Deskriptiva analyser | jamoviguiden" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://jamoviguiden.se" />
-  <meta property="og:image" content="https://jamoviguiden.se/images/pixel.jpg" />
+  <meta property="og:image" content="https://jamoviguiden.se//images/pixel.jpg" />
   <meta property="og:description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
   <meta name="github-repo" content="jRafi/jamoviguiden" />
 
@@ -19,21 +19,23 @@
   <meta name="twitter:title" content="3 Deskriptiva analyser | jamoviguiden" />
   
   <meta name="twitter:description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
-  <meta name="twitter:image" content="https://jamoviguiden.se/images/pixel.jpg" />
+  <meta name="twitter:image" content="https://jamoviguiden.se//images/pixel.jpg" />
 
 <meta name="author" content="Jonas Rafi" />
 
 
-<meta name="date" content="2020-01-05" />
+<meta name="date" content="2021-12-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="skalnivåer.html"/>
+<link rel="prev" href="skalnivaer.html"/>
 <link rel="next" href="oberoende-t-test.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,7 +51,8 @@
 
 
 
-
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127170706-3"></script>
 <script>
@@ -83,6 +86,7 @@ window.cookieconsent.initialise({
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -99,7 +103,7 @@ window.cookieconsent.initialise({
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Om jamoviguiden</a></li>
 <li class="part"><span><b>Kom igång</b></span></li>
 <li class="chapter" data-level="1" data-path="ladda-in-data-i-jamovi.html"><a href="ladda-in-data-i-jamovi.html"><i class="fa fa-check"></i><b>1</b> Ladda in data i jamovi</a></li>
-<li class="chapter" data-level="2" data-path="skalnivåer.html"><a href="skalnivåer.html"><i class="fa fa-check"></i><b>2</b> Ange skalnivåer</a></li>
+<li class="chapter" data-level="2" data-path="skalnivaer.html"><a href="skalnivaer.html"><i class="fa fa-check"></i><b>2</b> Ange skalnivåer</a></li>
 <li class="chapter" data-level="3" data-path="deskriptiva-analyser.html"><a href="deskriptiva-analyser.html"><i class="fa fa-check"></i><b>3</b> Deskriptiva analyser</a></li>
 <li class="part"><span><b>T-Test</b></span></li>
 <li class="chapter" data-level="4" data-path="oberoende-t-test.html"><a href="oberoende-t-test.html"><i class="fa fa-check"></i><b>4</b> T-Test: Oberoende</a></li>
@@ -132,7 +136,7 @@ window.cookieconsent.initialise({
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="deskriptiva-analyser" class="section level1">
+<div id="deskriptiva-analyser" class="section level1" number="3">
 <h1><span class="header-section-number">3</span> Deskriptiva analyser</h1>
 <div id="hur-du-utför-deskriptiva-analyser-och-skapar-grafer-i-jamovi" class="section level4 unnumbered">
 <h4>Hur du utför deskriptiva analyser och skapar grafer i jamovi:</h4>
@@ -160,12 +164,11 @@ window.cookieconsent.initialise({
           </div>
         </div>
       </div>
-<a href="skalnivåer.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="skalnivaer.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="oberoende-t-test.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -184,6 +187,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -204,6 +208,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section",
 "scroll_highlight": true

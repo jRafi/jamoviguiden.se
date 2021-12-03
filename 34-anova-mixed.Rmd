@@ -2,7 +2,7 @@
 
 #### Hur du gör en mixed ANOVA i jamovi: {-}  
 
-1. Du behöver en gruppvariabel och en kontinuerlig variabel för varje mättillfälle. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivåer)] så att gruppvariabeln är markerad med <img src="images/icons/nominal.JPG" width="3%" alt=" grouped data icon"/> och alla kontinuerliga variabler är markerade med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.  
+1. Du behöver en gruppvariabel och en kontinuerlig variabel för varje mättillfälle. Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivaer)] så att gruppvariabeln är markerad med <img src="images/icons/nominal.JPG" width="3%" alt=" grouped data icon"/> och alla kontinuerliga variabler är markerade med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>.  
 Ett korrekt dataset bör se ut ungefär såhär:  
 <img src="images/data_format/data_format_anova_mixed.JPG" width="50%"/> 
 

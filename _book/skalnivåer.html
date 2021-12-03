@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Ange skalnivåer | jamoviguiden</title>
   <meta name="description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Ange skalnivåer | jamoviguiden" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://jamoviguiden.se" />
-  <meta property="og:image" content="https://jamoviguiden.se/images/pixel.jpg" />
+  <meta property="og:image" content="https://jamoviguiden.se//images/pixel.jpg" />
   <meta property="og:description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
   <meta name="github-repo" content="jRafi/jamoviguiden" />
 
@@ -19,12 +19,12 @@
   <meta name="twitter:title" content="2 Ange skalnivåer | jamoviguiden" />
   
   <meta name="twitter:description" content="Lär dig göra independent samples t-test, paired samples t-test, one sample t-test, ANOVA, repeated measures ANOVA, factorial ANOVA, mixed ANOVA, linear regression, och logistic regression i jamovi. jamoviguiden innehåller även avsnitt om csv-filer och skalnivåer." />
-  <meta name="twitter:image" content="https://jamoviguiden.se/images/pixel.jpg" />
+  <meta name="twitter:image" content="https://jamoviguiden.se//images/pixel.jpg" />
 
 <meta name="author" content="Jonas Rafi" />
 
 
-<meta name="date" content="2020-01-05" />
+<meta name="date" content="2021-12-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,9 @@
   
 <link rel="prev" href="ladda-in-data-i-jamovi.html"/>
 <link rel="next" href="deskriptiva-analyser.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,7 +51,8 @@
 
 
 
-
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127170706-3"></script>
 <script>
@@ -80,6 +83,7 @@ window.cookieconsent.initialise({
   }
 })});
 </script>
+
 
 
 
@@ -132,7 +136,7 @@ window.cookieconsent.initialise({
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="skalnivåer" class="section level1">
+<div id="skalnivåer" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> Ange skalnivåer</h1>
 <p>Innan analyser kan genomföras i jamovi behöver du ofta ange en <a href="https://sv.wikipedia.org/wiki/M%C3%A4tskala">skalnivå</a> för de variabler som ingår i analysen. När data laddas in i jamovi får variablerna vanligtvis den lägsta nivån (nominal). Det betyder att om du exempelvis vill göra ett two-sample t-test så behöver båda variablerna ändras från <strong>Nominal</strong> till <strong>Continuous</strong>. Notera att jamovi inte skiljer på intervall- och kvotdata, utan kategoriserar all kvantitativ data som kontinuerlig.</p>
 <div id="hur-du-sätter-skalnivån-för-en-variabel" class="section level4 unnumbered">
@@ -141,9 +145,9 @@ window.cookieconsent.initialise({
 <li><p>Dubbelklicka på den variabel vars skalnivå du vill ändra.<br />
 <img src="images/data_format/select_variable.JPG" alt="Wide data" width="60%"/></p></li>
 <li><p>I variabel-fönstret, välj <code>ID</code>, <code>Nominal</code>, <code>Ordinal</code> eller <code>Continuous</code>.<br />
-<img src="images/data_format/set_data_type.JPG" alt="Wide data" width="80%"/></p></li>
+<img src="images/data_format/set_data_type.jpg" alt="Wide data" width="80%"/></p></li>
 <li><p>Klicka på uppåtpilen för att dölja variabelfönstret, eller klicka på vänster- eller högerpilen för att ändra en annan variabel.<br />
-<img src="images/data_format/set_data_type_2.JPG" alt="Wide data" width="80%"/></p></li>
+<img src="images/data_format/set_data_type_2.jpg" alt="Wide data" width="80%"/></p></li>
 </ol>
 
 </div>
@@ -158,7 +162,6 @@ window.cookieconsent.initialise({
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -177,6 +180,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -197,6 +201,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section",
 "scroll_highlight": true

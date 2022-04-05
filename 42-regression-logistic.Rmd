@@ -3,7 +3,7 @@
 #### Hur du gör en logistisk regression i jamovi: {-}
 
 
-1. Du behöver en _kategorisk_ beroende variabel och en prediktorvariabel.  
+1. Du behöver en _kategorisk_ beroende variabel och minst en prediktorvariabel.  
 Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivaer)] så att din beroende variabel är markerad med <img src="images/icons/nominal.JPG" width="3%" alt=" ikonen för grupperade data"/>. Ett lämpligt dataset kan se ut ungefär såhär:  
 <img src="images/data_format/data_format_regression_logistic.JPG" width="25%"/>  
 

@@ -5,7 +5,7 @@
 #### Hur du gör en linjär regression i jamovi: {-}
 
 
-1. Du behöver en _kontinuerlig_ beroende variabel och en prediktorvariabel.  
+1. Du behöver en _kontinuerlig_ beroende variabel och minst en prediktorvariabel.  
 Kontrollera att skalnivåerna är valda^[Val av skalnivåer demonstreras i avsnitt \@ref(skalnivaer)] så att din beroende variabel är markerad med <img src="images/icons/continuous.JPG" width="3%" alt=" ikonen för kontinuerliga data"/>. Ett lämpligt dataset kan se ut ungefär såhär:  
 <img src="images/data_format/data_format_regression.JPG" width="25%"/>  
 
